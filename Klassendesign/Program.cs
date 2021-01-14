@@ -39,7 +39,11 @@ namespace Klassendesign
             Person p = m; //Up-Cast -- implizit 
             //p.Instrument - Property ist nur über MusikerIn verfügbar
 
-            MusikerIn m2 = (MusikerIn)p;//Downcast würde zu InvalidCastException falls keine MusikerIn
+            if (p is MusikerIn)
+            {
+                MusikerIn m2 = (MusikerIn)p;//Downcast würde zu InvalidCastException falls keine MusikerIn
+            }
+            
 
             MitarbeiterIn mitarbeiterIn1 = new MitarbeiterIn();
             mitarbeiterIn1.Gehalt = 200;
@@ -56,11 +60,20 @@ namespace Klassendesign
 
             //Latebinding bei polymorphen Methoden-Aufrufen 
             pUrsprungMitarbeteiterIn.SayHello(); //Person oder MitarbeiterIn?
-            m2.SayHello();
+            //m2.SayHello();
 
             //Early-Binding - Methode ist nicht als polymorph gekennzeichnet
             pUrsprungMitarbeteiterIn.SayGoodbye();
+            meinePersonen[0].PrintInfo();
 
+            ISaveAndLoad[] speichernUndLaden = new ISaveAndLoad[2];
+            speichernUndLaden[0]=p1;
+            speichernUndLaden[1] = m;
+
+            if (speichernUndLaden[1] is MusikerIn)
+            { 
+                MusikerIn mDownCast = (MusikerIn) speichernUndLaden[1];
+            }
         }
 
         public static void ChangeValue(int z)

@@ -4,7 +4,8 @@ using System.Text;
 
 namespace Klassendesign
 {
-    class Person
+    /*zuerst Basisklasse, danach interface(s)*/
+    class Person :  Lebewesen, ISaveAndLoad 
     {
        // public int Alter; - public nicht empfohlen
        // public string Vorname;
@@ -84,6 +85,21 @@ namespace Klassendesign
         public void SayGoodbye()
         {
             Console.WriteLine("Tschüß");
+        }
+
+        public override void PrintInfo()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Save()
+        {
+            Console.WriteLine("Person wurde gespeichert");
+        }
+
+        public void Load(string filename)
+        {
+            Console.WriteLine("Person wurde geladen");
         }
     }
 }

@@ -17,5 +17,10 @@ namespace Klassendesign
         {
             Console.WriteLine("Haaalllooooo "); ;
         }
+
+        public override void PrintInfo()
+        {
+            Console.WriteLine("Ich bin eine MusikerIn");
+        }
     }
 }
