@@ -31,6 +31,36 @@ namespace Klassendesign
             //Reference variable
             ChangeReference(p3);
 
+            MusikerIn m = new MusikerIn();
+            m.Vorname = "Willi";
+            m.Instrument = "Gitarre";
+            m.Spielen();
+
+            Person p = m; //Up-Cast -- implizit 
+            //p.Instrument - Property ist nur über MusikerIn verfügbar
+
+            MusikerIn m2 = (MusikerIn)p;//Downcast würde zu InvalidCastException falls keine MusikerIn
+
+            MitarbeiterIn mitarbeiterIn1 = new MitarbeiterIn();
+            mitarbeiterIn1.Gehalt = 200;
+
+            Person person = mitarbeiterIn1;
+
+            Person[] meinePersonen = new Person[2];
+            meinePersonen[0] = m;
+            meinePersonen[1] = person;
+
+            p2.SayHello();
+            mitarbeiterIn1.SayHello();
+            Person pUrsprungMitarbeteiterIn = mitarbeiterIn1;
+
+            //Latebinding bei polymorphen Methoden-Aufrufen 
+            pUrsprungMitarbeteiterIn.SayHello(); //Person oder MitarbeiterIn?
+            m2.SayHello();
+
+            //Early-Binding - Methode ist nicht als polymorph gekennzeichnet
+            pUrsprungMitarbeteiterIn.SayGoodbye();
+
         }
 
         public static void ChangeValue(int z)

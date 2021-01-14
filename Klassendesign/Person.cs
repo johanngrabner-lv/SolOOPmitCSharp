@@ -75,5 +75,15 @@ namespace Klassendesign
             return ergebnis;
 
         }
+
+        public virtual void SayHello() //diese Methode ist polymorph
+        {
+            Console.WriteLine("Hallo");
+        }
+
+        public void SayGoodbye()
+        {
+            Console.WriteLine("Tschüß");
+        }
     }
 }
