@@ -7,6 +7,10 @@ namespace OOPmitCSharp
     {
         static void Main(string[] args)
         {
+
+            Random random = new Random(DateTime.Now.Second);
+            int zz= random.Next(1, 10);
+
             Console.WriteLine("Hello Campus02!");
 
             //Full qualified name
@@ -89,6 +93,17 @@ namespace OOPmitCSharp
                 Console.WriteLine("Action");
             }
 
+            //wäre auch möglich, schlecht lesbar
+            if (ergebnisFunctionA > 2 && ergebnisFunctionB < 10)
+           
+                Console.WriteLine("Action");
+           
+
+
+            int[] meineZahlen=new int[2];
+            meineZahlen[0] = 7;
+            meineZahlen[1] = 42;
+
         }
 
         static int FunctionA()
@@ -115,3 +130,26 @@ namespace FirmaA.EDVWaren
     }
 
 }
+
+
+/*Rätselaufgabe 
+ *      Random random = new Random(DateTime.Now.Second);
+         int zz= random.Next(1, 10);
+ * Computer "überlegt sich eine zufällige Zahl im Bereich zwischen 0 und 100"
+ * Benutzer gibt Tipp ab und bekommt Rückmeldung ob kleiner oder größer
+ * Maximal 10 Versuche erlaubt
+ * Beispiel: Zufällige Zahl 70
+ * 1. Eingabe: 35 ---> Meine Zahl ist größer
+ * 2. Eingabe: 80 --> Meine zahl ist kleiner
+ * 3. Eingabe: 60 --> Meine Zahl ist größer
+ * 4. Eingabe: 70 -- -Super Sie nur haben 4 Versuche benötigt
+ * 
+ * <5 Eingaben == super
+ * 6 und 8 == ok
+ * 9 == eher schlecht
+ * >10 Versuchen --- Sie haben die Zahl nicht erraten
+ * 
+ * 
+ * 
+ * 
+ */
