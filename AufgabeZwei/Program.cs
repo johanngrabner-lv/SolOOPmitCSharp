@@ -13,6 +13,8 @@ namespace AufgabeZwei
 
             int umfang = r1.GetUmfang();
             int flaeche = r1.Flaeche; // Get-Property
+           // r1.Flaeche = 200; nicht möglich
+
             /*
              * public int Flaeche
             {
@@ -25,6 +27,11 @@ namespace AufgabeZwei
 
             InfoAusgeben(r1); // Laenge, Breite, Umfang, Flaeche
             InfoAusgeben(r2);
+        }
+
+        private static void InfoAusgeben(Rechteck rechteck)
+        {
+            Console.WriteLine(rechteck.ToString());
         }
     }
 }
