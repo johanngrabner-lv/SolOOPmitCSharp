@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOPmitCSharp", "OOPmitCShar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "campus02.dotnet", "campus02.dotnet\campus02.dotnet.csproj", "{797A0F41-3FA3-46DB-A1BC-5E4F0F8D8FCB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZahlenRaten", "ZahlenRaten\ZahlenRaten.csproj", "{08C333C6-6D0F-4F37-B387-8102AAFEA6B6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{797A0F41-3FA3-46DB-A1BC-5E4F0F8D8FCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{797A0F41-3FA3-46DB-A1BC-5E4F0F8D8FCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{797A0F41-3FA3-46DB-A1BC-5E4F0F8D8FCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08C333C6-6D0F-4F37-B387-8102AAFEA6B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08C333C6-6D0F-4F37-B387-8102AAFEA6B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08C333C6-6D0F-4F37-B387-8102AAFEA6B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08C333C6-6D0F-4F37-B387-8102AAFEA6B6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

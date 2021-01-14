@@ -149,7 +149,7 @@ namespace FirmaA.EDVWaren
  * 9 == eher schlecht
  * >10 Versuchen --- Sie haben die Zahl nicht erraten
  * 
- * 
+ * bis 10:50 Uhr --> Zwischenabstimmung
  * 
  * 
  */
