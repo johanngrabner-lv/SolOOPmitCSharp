@@ -30,20 +30,21 @@ namespace AufgabeZwei
         }
         public int Breite { get; set; }
 
-        public Rechteck():this(10,50)
+        public Rechteck():this(10,20)
         {
-
+            Console.WriteLine("Nach dem Aufruf des Konstruktors mit 2 Parametern");
         }
         public Rechteck(int laengeUndBreite):this(laengeUndBreite,laengeUndBreite)
         {
-
+            
         }
-
         public Rechteck(int laenge, int breite)
         {
+            Console.WriteLine("Der Konstruktor wurde aufgerufen!");
             Laenge = laenge;
             Breite = breite;
         }
+
 
         public int GetUmfang()
         {
