@@ -10,3 +10,14 @@ namespace OOPmitCSharp
         }
     }
 }
+//at.campus02.vorlesung -- java
+//.net campus02.vorlesung
+
+namespace FirmaA.EDVWaren
+{
+    class Kunde
+    {
+
+    }
+
+}
