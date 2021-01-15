@@ -11,6 +11,20 @@ namespace AufgabeZwei
             Rechteck r1 = new Rechteck(10, 20); //Laenge Breite
             Rechteck r2 = new Rechteck(10); // Laenge == Breite
 
+            try
+            {
+                r1.Laenge = -20;
+            }
+            catch (LaengeBreiteException ex)
+            {
+
+                Console.WriteLine($"Ein Fehler {ex.Message} " ); ;
+            }
+            catch(Exception ex)
+            {
+
+            }
+
             int umfang = r1.GetUmfang();
             int flaeche = r1.Flaeche; // Get-Property
            // r1.Flaeche = 200; nicht möglich

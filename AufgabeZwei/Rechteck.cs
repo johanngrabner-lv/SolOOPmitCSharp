@@ -24,10 +24,14 @@ namespace AufgabeZwei
             }
             set
             {
-                if (Laenge < 0)
+
+                if (value < 0)
                 {
                     Console.WriteLine("Negativer Wert nicht erlaubt");
-                    throw new Exception("Laenge darf nicht negativ sein");
+                    //throw new Exception("Laenge darf nicht negativ sein");
+                    //ersetzen durch eigene Exception-Klasse, try catch im Main
+                    //09:25 Uhr
+                    throw new LaengeBreiteException("darf nicht negativ sein");
                 }
                 else
                 {
