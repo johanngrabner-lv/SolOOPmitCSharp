@@ -31,7 +31,7 @@ namespace AufgabeZwei
                     //throw new Exception("Laenge darf nicht negativ sein");
                     //ersetzen durch eigene Exception-Klasse, try catch im Main
                     //09:25 Uhr
-                    throw new LaengeBreiteException("darf nicht negativ sein");
+                    throw new MyLaengeBreiteException("darf nicht negativ sein");
                 }
                 else
                 {
