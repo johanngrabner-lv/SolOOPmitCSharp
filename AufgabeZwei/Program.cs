@@ -27,6 +27,46 @@ namespace AufgabeZwei
 
             InfoAusgeben(r1); // Laenge, Breite, Umfang, Flaeche
             InfoAusgeben(r2);
+
+            Rechteck r3 = new Rechteck();
+            r3.Print();
+            r3.GetUmfang();
+
+            IPrintable iPrint = r3; //implizite Zuweisung, Up-Cast
+            iPrint.Print();
+
+            GeometrischeFigur geometrischeFigur = r3; //Up-Cast
+            geometrischeFigur.GetUmfang(); //polymorph
+
+
+            Kreis kr = new Kreis();
+
+            GeometrischeFigur figur = kr;
+
+            //if (figur is Rechteck
+
+            try
+            {
+                Rechteck rNichtMoeglich = (Rechteck)figur;
+            }
+            catch (Exception ex)
+            {
+
+                string meldung = ex.Message;
+            }
+          
+            
+            Rechteck rechteck;
+
+            if (iPrint is Rechteck)
+            {
+                rechteck = (Rechteck)iPrint; //Downcast
+            }
+
+            if (geometrischeFigur is Rechteck)
+            {
+                rechteck = (Rechteck)geometrischeFigur;//Downcast
+            }
         }
 
         private static void InfoAusgeben(Rechteck rechteck)

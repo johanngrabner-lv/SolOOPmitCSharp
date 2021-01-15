@@ -4,6 +4,7 @@ using System.Text;
 
 namespace AufgabeZwei
 {
+    /*
     1. 
     GeometrischeFigur - abstrakte Klasse
         GetUmfang() abstrakt
@@ -11,7 +12,7 @@ namespace AufgabeZwei
    2: interface IPrintable -- Print();
 
     3. GetUmfang() über Basisklasse aufrufen / Up und Down-Cast demonstrieren
-
+    */
     class Rechteck : GeometrischeFigur, IPrintable 
     {
         private int _Laenge;
@@ -54,7 +55,7 @@ namespace AufgabeZwei
         }
 
 
-        public int GetUmfang()
+        public override  int GetUmfang()
         {
             return (Laenge + Breite) * 2;
         }
@@ -71,5 +72,11 @@ namespace AufgabeZwei
         {
             return $"Laenge: {Laenge} Breite {Breite} Umfang: {GetUmfang()} Fläche: {Flaeche} ";
         }
+
+        public void Print()
+        {
+            Console.WriteLine("wurde gedruckt");
+        }
     }
+
 }
