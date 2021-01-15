@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fehlerbehandlung", "Fehlerb
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenerischeDatentypen", "GenerischeDatentypen\GenerischeDatentypen.csproj", "{EB809FDC-C84C-4CE1-ACA8-093C282A82E8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Klausurvorbereitung", "Klausurvorbereitung\Klausurvorbereitung.csproj", "{897E26F2-DA00-4BC0-ABF7-78B6EBD8E0F4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{EB809FDC-C84C-4CE1-ACA8-093C282A82E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB809FDC-C84C-4CE1-ACA8-093C282A82E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB809FDC-C84C-4CE1-ACA8-093C282A82E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{897E26F2-DA00-4BC0-ABF7-78B6EBD8E0F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{897E26F2-DA00-4BC0-ABF7-78B6EBD8E0F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{897E26F2-DA00-4BC0-ABF7-78B6EBD8E0F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{897E26F2-DA00-4BC0-ABF7-78B6EBD8E0F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
